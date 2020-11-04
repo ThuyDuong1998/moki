@@ -1,0 +1,203 @@
+/*css grid and list view cho phan thuc don tiec 04/08/2020 byhathao*/
+.col-grid-4 {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 23%);
+}
+@media only screen and (min-width: 260px) and (max-width: 576px) {
+    * {
+
+    }
+    .col-xl-12.col-fle.col-grid-4 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 47%);
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    * {
+
+    }
+    .col-xl-12.col-flex.col-grid-4 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 47%);
+
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+    * {
+        
+    }
+    .col-xl-12.col-flex.col-grid-4 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 30%)!important;
+        
+    }
+}
+@media only screen and (min-width: 1200px) {
+    * {
+        
+    }
+    .col-xl-12.col-flex.col-grid-4 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 23%)!important;
+    }
+}
+
+
+
+.card_text_food.paty{
+    display: inline-block;
+    width: 100%;
+}
+.card_text_food.paty span.wrapper_price {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card_text_food .icon-sub-menu{
+color: #333333;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+}
+.paty .wrapper_price{
+    width: 50%;
+    float: left;
+}
+.paty .xemthucdon{
+    width: 50%;
+    float: left;
+    text-align: right;
+    transition: .2s;
+    cursor: pointer;
+    padding-right: 5px;
+}
+.paty .xemthucdon span{
+    font-size: 12px;
+}
+.js-open{
+    display: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    border-top: 1px solid #E3E5EA;
+    padding: 10px 10px 0 10px;
+    margin-top: 10px;
+}
+.up-icon .icon-chevron:before {
+    content: "\ea59";
+    color: #A5CE36;
+}
+.paty .xemthucdon.up-icon{
+    color: #A5CE36;
+    
+}
+.js-open .nav-link{
+    width: 100%;
+    line-height: 25px;
+}
+.js-open .nav-link .text-left-tt{
+    float: left;
+    width: 50%;
+}
+.js-open .nav-link .text-right-tt{
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+.card_body_food.v2{
+    padding: 0;
+    padding-top: 15px;
+}
+.card_body_food.v2 .card_title_food, .card_body_food.v2 .text_food_notice{
+    padding: 0 10px;
+    height: auto;
+}
+.card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    transition: .3s;
+}
+.card-columns .card_food{
+    margin: 10px 0;
+}
+.card-columns .card {
+    display: inline-block!important;
+    width: 100%!important;
+}
+.card-columns .info_store{
+    width: 100%;
+    text-align: left;
+}
+.quick_find.v2 {
+    justify-content: flex-end;
+}
+.quick_find.v2 .wrapper_result {
+    margin-right: 30px;
+}
+.quick_find.v2 .wrapper_result span{
+    color: #FF3F34;
+    font-size: 16px;
+}
+/*select#exampleFormControlSelect1, select#exampleFormControlSelect2, input#formGroupExampleInput {
+    border: none;
+    padding-left: 0;
+}*/
+
+@media (max-width: 1024px){
+
+.card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+}
+@media (max-width: 767px){
+
+.card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+/*.card-columns.list-paty{
+        -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+.card-columns.list-paty .info_store{
+    width: 100%;
+    text-align: right;
+}
+.card-columns.list-paty a.link_product_img img{
+    height: auto;
+}
+.card-columns.list-paty a.link_product_img{
+position: inherit;
+}
+.card-columns.list-paty .wrapper_img_product{
+    height: auto;
+}*/
+
+}
+@media (max-width: 480px){
+
+.card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+}
+@media (max-width: 360px){
+.quick_find.v2 .wrapper_result {
+    margin-right: 5px;
+}
+}
